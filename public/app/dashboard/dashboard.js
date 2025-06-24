@@ -56,8 +56,8 @@ async function signOut() {
             console.error('Sign out error:', error);
             alert('Error signing out. Please try again.');
         } else {
-            // Redirect to sign in page
-            window.location.href = '/website/signin/signin.html';
+            // Redirect to main website homepage
+            window.location.href = '/';
         }
     } catch (error) {
         console.error('Sign out error:', error);

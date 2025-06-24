@@ -73,7 +73,7 @@ if (signinForm) {
                 showMessage('Successfully signed in!', 'success')
                 // Redirect to dashboard
                 setTimeout(() => {
-                    window.location.href = '/dashboard/dashboard.html'
+                    window.location.href = '/app/dashboard/dashboard.html'
                 }, 1000)
             }
         } catch (error) {
@@ -102,7 +102,7 @@ async function checkUser() {
     try {
         const { data: { user } } = await supabaseClient.auth.getUser()
         if (user) {
-            window.location.href = '/dashboard/dashboard.html'
+            window.location.href = '/app/dashboard/dashboard.html'
         }
     } catch (error) {
         console.error('Error checking user:', error)
